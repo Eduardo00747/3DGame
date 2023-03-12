@@ -29,4 +29,17 @@ public class PlayerController : MonoBehaviour
         // Mover o personagem de acordo com a direção do movimento.
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
     }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        // Se o objeto colidido for um inimigo, destruí-lo.
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+
+            Debug.Log("O personagem colidiu com o inimigo!");
+            //Destroy(collision.gameObject);
+        }
+
+
+    }
 }
