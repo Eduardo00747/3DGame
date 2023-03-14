@@ -13,7 +13,9 @@ public class PlayerDetector : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>(); // Obter a referência do Rigidbody do inimigo
+        player = GameObject.FindWithTag("Player").transform; // Encontrar o objeto do jogador na cena com a tag "Player"
     }
+
 
     void FixedUpdate()
     {

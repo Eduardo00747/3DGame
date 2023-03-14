@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class Knockback : MonoBehaviour
+public class EnemyKnockback : MonoBehaviour
 {
 
     public float knockbackDelay = 0.15f;  // Delay em segundos
@@ -32,7 +32,7 @@ public class Knockback : MonoBehaviour
 
     void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.GetComponent<Rigidbody>() != null)
+        if (other.gameObject.CompareTag("Player"))
         {
             knockbackEnabled = true;
             Vector3 direction = (other.transform.position - transform.position).normalized;

@@ -27,18 +27,18 @@ public class EnemyController : MonoBehaviour
         {
             // Se o inimigo não está perseguindo o jogador, patrulhe entre as bordas do cenário
             float xPos = enemyRigidbody.position.x + moveDirection.x * speed * Time.fixedDeltaTime;
-            if (xPos + enemyCollider.radius > 10f)
+
+            // Verifica se o inimigo está prestes a sair dos limites da cena
+            if (xPos + enemyCollider.radius > 10f || xPos - enemyCollider.radius < -10f)
             {
-                xPos = 10f - enemyCollider.radius;
-                moveDirection = Vector3.left;
-                isMovingRight = false;
+                // Define a nova direção de movimento
+                moveDirection = isMovingRight ? Vector3.left : Vector3.right;
+                isMovingRight = !isMovingRight;
+
+                // Define a nova posição como a posição atual do inimigo
+                xPos = enemyRigidbody.position.x;
             }
-            else if (xPos - enemyCollider.radius < -10f)
-            {
-                xPos = -10f + enemyCollider.radius;
-                moveDirection = Vector3.right;
-                isMovingRight = true;
-            }
+
             enemyRigidbody.MovePosition(new Vector3(xPos, enemyRigidbody.position.y, enemyRigidbody.position.z));
         }
         else
@@ -49,13 +49,13 @@ public class EnemyController : MonoBehaviour
         }
     }
 
-    void OnColliderEnter(Collider other)
+    void OnCollisionEnter(Collision collision)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player"))
         {
             // Se o jogador entrar no raio de detecção, comece a persegui-lo
             isPlayerDetected = true;
-            playerTransform = other.transform;
+            playerTransform = collision.gameObject.transform;
         }
     }
 

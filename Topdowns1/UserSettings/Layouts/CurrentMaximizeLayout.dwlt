@@ -191,7 +191,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 391
+  controlID: 14376
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -211,8 +211,8 @@ MonoBehaviour:
     y: 0
     width: 300
     height: 566
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 7}
   m_Panes:
   - {fileID: 7}
@@ -249,9 +249,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: dc5c0000
-      m_LastClickedID: 23772
-      m_ExpandedIDs: 28fbffffaa5c0000dc5c00003e5d0000
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 660fffff483bffff943effff8a97ffffcaa2ffff3eabffffe6beffff8ec6ffff28fbffffd85c0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -581,9 +581,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -16.018818, y: 1, z: -70}
+    m_Target: {x: -2, y: 2, z: -98}
     speed: 2
-    m_Value: {x: -16.018818, y: 1, z: -70}
+    m_Value: {x: -2, y: 2, z: -98}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -630,13 +630,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.050362684, y: -0.028152267, z: 0.0013319234, w: 0.9984141}
+    m_Target: {x: 0.41263524, y: -0.018875275, z: 0.008463612, w: 0.91076744}
     speed: 2
-    m_Value: {x: 0.05035862, y: -0.028149994, z: 0.001331816, w: 0.9983335}
+    m_Value: {x: 0.4125954, y: -0.018873453, z: 0.008462795, w: 0.9106795}
   m_Size:
-    m_Target: 1.2511262
+    m_Target: 12.124355
     speed: 2
-    m_Value: 1.2511262
+    m_Value: 12.124355
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -808,22 +808,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/Pause
+    - Assets/Prefabs
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts/Pause
+  - Assets/Prefabs
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\Eduardo\Documents\GitHub\3DGame\Topdowns1
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 7e5e0000
-    m_LastClickedID: 24190
-    m_ExpandedIDs: 00000000265e0000785e000000ca9a3b
+    m_SelectedIDs: 266c0000
+    m_LastClickedID: 27686
+    m_ExpandedIDs: 00000000265e0000345e000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -851,7 +851,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000265e000000ca9a3b
+    m_ExpandedIDs: 00000000265e0000345e000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -876,8 +876,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: dc5c0000
-    m_LastClickedInstanceID: 23772
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
@@ -954,8 +954,8 @@ MonoBehaviour:
     y: 0
     width: 489
     height: 381
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 2}
   m_Panes:
   - {fileID: 2}
